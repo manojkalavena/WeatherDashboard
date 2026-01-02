@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba7);
+    min-height: 100vh;
+    padding:30px;
+    color:#333
+}
+.container{
+    max-width:1200px;
+    margin:auto
+}
+.header{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.header h1{
+    font-size: 2.5em;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    ;
+}
+.search-box input{
+    padding:12px;
+    width:300px;
+    border:none;
+    border-radius: 20px;
+}
+.search-box button{
+    padding:16px 35px ;
+    width:110px;
+    border:none;
+    border-radius: 20px;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+.current-weather,
+.forecast-section{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.current-weather-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.location{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.date{
+    color: rgb(100, 23, 4);
+}
+.current-main{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.weather-icon{
+    font-size: 4em;
+}
+.temperature{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #764ba7;
+}
+.descripion{
+    color:grey
+}
+.weather-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 20px;
+}
+.detail-item{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.value{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.hourly-forecast{
+    display: flex;
+    gap: 10px;
+    overflow-x:auto;
+}
+.hourly-item{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+}
+.daily-forecast{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr)) ;
+    gap: 15px;
+}
+.daily-item{
+    background: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.loading{text-align: center;color: aliceblue;font-size: 1.7em;}
+.error{background: darkred;
+    color: beige;
+    padding: 10px;
+    text-align: center;
+    border-radius:10px}
